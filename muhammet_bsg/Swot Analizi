@@ -1,0 +1,7 @@
+Elektrikli araç şarj altyapısı güvenliği, bir yandan OCPP protokolünün farklı üreticiler arasında çalışabilirlik sağlaması ve TLS şifreleme desteği sunması gibi güçlü yönlere sahiptir. Ancak sistem, ciddi zayıf yönler taşımaktadır. 
+Bunların başında CAN-Bus protokolünün doğası gereği kimlik doğrulama ve şifreleme gibi temel güvenlik mekanizmalarından yoksun olması gelmektedir. 
+Ayrıca, OCPP'nin TLS gibi güvenlik önlemleri olsa bile, güvenlik uygulamalarındaki tutarsızlıklar ve fiziksel uç noktaların halka açık olması nedeniyle şarj istasyonları yüksek fiziksel erişim riskine sahiptir. 
+Bu zafiyetler, OCPP komutlarının CAN-Bus'a iletildiği siber-fiziksel köprüde manipülasyonla sonuçlanabilir. 
+Gelecekteki fırsatlar ise Blokzincir teknolojisinin merkeziyetsiz, izlenebilir yapısından faydalanarak mesaj bütünlüğünü artırmakta, ayrıca AI tabanlı anomali tespiti ve HSM/TPM gibi donanım tabanlı güvenlik çözümleriyle PKI sistemlerini güçlendirmekte yatmaktadır. 
+Tüm bunlara karşın, en büyük tehditler; DoS (Hizmet Reddi) ve Tampering (Manipülasyon) gibi yüksek riskli saldırılardır.
+Özellikle zayıf kimlik doğrulama mekanizmaları kullanılarak zararlı firmware gönderilmesi veya MeterValues gibi hassas verilerin değiştirilerek faturalama hilesi yapılması gibi riskler devam etmektedir.
